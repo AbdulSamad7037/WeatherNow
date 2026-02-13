@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+     /* ✅ Default image before search */
+    background-image: url("media/default.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Search box positioned on the right side */
+.searchBox {
+    position: absolute;
+    top: 20px;
+    left: 30px;          /* Move to left corner */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Smaller input with round corners */
+input {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;  /* Fully round */
+    outline: none;
+    width: 180px;         /* Slightly smaller width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Smaller button with round corners */
+button {
+    padding: 8px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;  /* Fully round */
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weatherInfo {
+    position: relative;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+.weatherInfo h1 {
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.weatherInfo h2 {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.weatherInfo h3 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Wind - bottom left, no box */
+#wind {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Humidity - bottom right, no box */
+#humidity {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Icon styles (if using image icons) */
+.weather-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+/* Font Awesome icon adjustments */
+.fa-wind, .fa-tint {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.appName {
+    margin-top: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.weatherInfo {
+    display: none;
+}
